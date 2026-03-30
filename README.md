@@ -73,19 +73,19 @@ Original Images (gr7/Original/)
 
 ### Example 1: Image 10 (Salt-and-Pepper Noise)
 
-| Noisy Input | Denoised Output | Original |
-|:-----------:|:---------------:|:--------:|
-| <img src="gr7/Noisy/R10.bmp" width="200"/> | <img src="gr7/Original/10.bmp" width="200"/> | <img src="gr7/Original/10.bmp" width="200"/> |
+| Noisy Input | Denoised (Median Filter) | Original |
+|:-----------:|:------------------------:|:--------:|
+| <img src="gr7/Noisy/R10.bmp" width="200"/> | <img src="gr7/Denoised/denoised_10_median.png" width="200"/> | <img src="gr7/Original/10.bmp" width="200"/> |
 | PSNR: ~28 dB | PSNR: ~32 dB | Reference |
 
 ### Example 2: Image 53 (Gaussian Noise)
 
-| Noisy Input | Denoised Output | Original |
-|:-----------:|:---------------:|:--------:|
-| <img src="gr7/Noisy/R53.bmp" width="200"/> | <img src="gr7/Original/53.bmp" width="200"/> | <img src="gr7/Original/53.bmp" width="200"/> |
+| Noisy Input | Denoised (Gaussian Filter) | Original |
+|:-----------:|:--------------------------:|:--------:|
+| <img src="gr7/Noisy/R53.bmp" width="200"/> | <img src="gr7/Denoised/denoised_53_gaussian.png" width="200"/> | <img src="gr7/Original/53.bmp" width="200"/> |
 | PSNR: ~26 dB | PSNR: ~30 dB | Reference |
 
-> **Note:** The denoised images shown above are processed using the Median Filter (for Salt-and-Pepper) and Gaussian Filter (for Gaussian noise) respectively. See `DenoisingAssignment.ipynb` for the complete results on all 10 images.
+> **Note:** The denoised images are generated using the optimal filter for each noise type: Median Filter for Salt-and-Pepper (image 10) and Gaussian Filter for Gaussian noise (image 53). See `DenoisingAssignment.ipynb` for the complete results on all 10 images.
 
 ### Quality Metrics
 
